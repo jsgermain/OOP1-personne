@@ -23,5 +23,14 @@ namespace stageOOP
             this.nom = unPrenom;
             this.age = unAge;
         }
+
+        // on crée une méthode nous permettant d'afficher ses infos
+
+        public string affichage()
+        {
+            return nom + " " + prenom + " " + age;
+        }
+
+
     }
 }
