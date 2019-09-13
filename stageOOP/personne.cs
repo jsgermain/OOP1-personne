@@ -20,15 +20,21 @@ namespace stageOOP
             // pour que la personne instancée puisse recupérer les valeurs passer en paraamètres
             //this. concerne la classe, il prend la valeur correspondant aux propriétés et les lie à ceux du paramètre
             this.nom = unNom;
-            this.nom = unPrenom;
+            this.prenom = unPrenom;
             this.age = unAge;
+        }
+
+        // pour changer la valeur d'un paramètre de la classe
+        public  void setAge(int value)
+        {
+            age = value;
         }
 
         // on crée une méthode nous permettant d'afficher ses infos
 
         public string affichage()
         {
-            return nom + " " + prenom + " " + age;
+            return nom + " " + prenom + " " + age +" ans";
         }
 
 
