@@ -24,11 +24,18 @@ namespace stageOOP
             this.age = unAge;
         }
 
-        // pour changer la valeur d'un paramètre de la classe
+        // pour changer la valeur d'un paramètre de la classe (ici age)
         public  void setAge(int value)
         {
             age = value;
         }
+
+        // Pour cibler un élément passé en paramètre (ici age)
+        public string getAge() 
+        {
+            return age.ToString();
+        }
+        
 
         // on crée une méthode nous permettant d'afficher ses infos
 
