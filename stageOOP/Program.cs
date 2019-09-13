@@ -14,7 +14,9 @@ namespace stageOOP
             unePersonne = new personne("Saint Germain", "Johnes", 31); // pour le constructeur puisse bien faire son travail, 
                                                                        //il faut que les paramètres soient respectés ("Saint Germain", "Johnes", 31)
 
-
+            
+            // on appelle la méthode d'affichage de la classe 
+            Console.WriteLine(unePersonne.affichage());
 
 
         }
