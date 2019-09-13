@@ -15,7 +15,7 @@ namespace stageOOP
         private int age;
 
         // comme toute classe, celle là a une constructeur
-        public personne()
+        public personne(string unNom, string unPrenom, int unAge) // on ajoute les paramètres de la classe dans le constructeur (string unNom, string unPrenom, int unAge)
         {
             Console.WriteLine("coucou");
         }
