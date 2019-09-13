@@ -17,7 +17,11 @@ namespace stageOOP
         // comme toute classe, celle là a une constructeur
         public personne(string unNom, string unPrenom, int unAge) // on ajoute les paramètres de la classe dans le constructeur (string unNom, string unPrenom, int unAge)
         {
-            Console.WriteLine("coucou");
+            // pour que la personne instancée puisse recupérer les valeurs passer en paraamètres
+            //this. concerne la classe, il prend la valeur correspondant aux propriétés et les lie à ceux du paramètre
+            this.nom = unNom;
+            this.nom = unPrenom;
+            this.age = unAge;
         }
     }
 }
