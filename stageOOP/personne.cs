@@ -12,7 +12,10 @@ namespace stageOOP
         // en privé pour éviter les utilisateurs du programme de changer les propriétés
         private string nom;
         private string prenom;
-        private int age;
+        public int age { get; set; }
+                                    // on rend âge une propriété
+                                    // on met âge en public pour y accéder hors de la classe
+                                    // en ajoutant { get; set; }
 
         // comme toute classe, celle là a une constructeur
         public personne(string unNom, string unPrenom, int unAge) // on ajoute les paramètres de la classe dans le constructeur (string unNom, string unPrenom, int unAge)
@@ -24,18 +27,8 @@ namespace stageOOP
             this.age = unAge;
         }
 
-        // pour changer la valeur d'un paramètre de la classe (ici age)
-        public  void setAge(int value)
-        {
-            age = value;
-        }
-
-        // Pour cibler un élément passé en paramètre (ici age)
-        public string getAge() 
-        {
-            return age.ToString();
-        }
-        
+ /* au lieu d'écrire l'accesseur get et set */
+       
 
         // on crée une méthode nous permettant d'afficher ses infos
 
