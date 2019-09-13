@@ -14,9 +14,9 @@ namespace stageOOP
             unePersonne = new personne("Saint Germain", "Johnes", 31); // pour le constructeur puisse bien faire son travail, 
                                                                        //il faut que les paramètres soient respectés ("Saint Germain", "Johnes", 31)
 
-            // pour le set 
-            unePersonne.age = 20;
-            Console.WriteLine(unePersonne.affichage());
+            // pour le get 
+            
+            Console.WriteLine(unePersonne.age);
 
             
 
